@@ -1,0 +1,85 @@
+<!Doctype html>
+<html lang="uk">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="World Clock - поточний час у різних містах світу.">
+        <title>World Clock</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <main class="clock-page">
+
+            <section class="clock-card" aria-labelledby="page-title">
+
+                <p class="eyebrow">WORLD CLOCK</p>
+
+                <h1 id="page-title">Час у світі</h1>
+
+                <label class="city-label" for="city-select">
+                    Оберіть місто
+                </label>
+
+                <select id="city-select" aria-label="Виберіть місто">
+                    <option value="Europe/Kyiv">
+                        Київ, Україна
+                    </option>
+
+                    <option value="Europe/London">
+                        Лондон, Велика Британія
+                    </option>
+
+                    <option value="Europe/Paris">
+                        Париж, Франція
+                    </option>
+
+                    <option value="Europe/Vienna">
+                        Відень, Австрія
+                    </option>
+
+                    <option value="America/New_York">
+                        Нью-Йорк, США
+                    </option>
+
+                    <option value="America/Los_Angeles">
+                        Лос-Анджелес, США
+                    </option>
+
+                    <option value="Asia/Tokyo">
+                        Токіо, Японія
+                    </option>
+
+                    <option value="Asia/Shanghai">
+                        Шанхай, Китай
+                    </option>
+
+                    <option value="Australia/Sydney">
+                        Сідней, Австралія
+                    </option>
+                </select>
+
+                <div
+                    class="clock"
+                    id="clock"
+                    aria-live="polite"
+                >
+                    00:00:00
+                </div>
+
+                <p class="date" id="date">
+                    —
+                </p>
+
+            </section>
+
+        </main>
+
+        <script src="script.js" defer></script>
+
+    </body>
+
+</html>
